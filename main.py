@@ -2,12 +2,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from crewai import Crew, Task, Process
-from agents.trend_listener import Agents
+from agents.trend_based_article_generator import Agents
 from tasks.tasks import TrendbasedArticleGeneratorTasks
-# from agents.trend_analyzer import TrendAnalyzerAgent
-# from agents.content_writer import ContentWriterAgent
 import json
 import os
+
 # Load product intelligence data
 
 # with open('data/product_intelligence.json') as f:
