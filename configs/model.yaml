@@ -1,13 +1,17 @@
 # /configs/model.yaml
 
-llama3:
-    ollama:
-        small: 'crewai-llama3'
+ollama:
+    llama3_8b: 'crewai-llama3'
         # medium: 'crewai-llama3-70b'
-    groq:
-        small: 'llama3-8b-8192'
-        medium: 'llama3-70b-8192'
+groq:
+    llama3_8b : 'llama3-8b-8192'
+    llama3_70b : 'llama3-70b-8192'
 openai:
-    gpt-3.5: 'gpt-3.5-turbo'
+    gpt_3.5: 'gpt-3.5-turbo' #input $0.5 and output $1.5
+    gpt_4o: 'gpt-4o'  #input $5 and output $15
+    gpt_4_turbo: 'gpt-4-turbo' #most expensive - input $10 and output $30
+
+anthropic:
+
 
       

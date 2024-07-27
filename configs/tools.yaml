@@ -1,0 +1,23 @@
+search_tool:
+  llm: None
+
+browser_tool:
+  llm: groq-llama3_70b #openai-gpt_3.5
+
+website_scraper:
+  llm: 
+    trend_analyzer: groq-llama3_70b #openai-gpt_3.5
+
+product_intelligence_analyzer:
+  llm:
+    sentence_transformer: 'all-MiniLM-L6-v2'
+
+content_generator:
+  llm:
+    template_selector: groq-llama3_70b #openai-gpt_3.5
+    content_generator: groq-llama3_70b #openai-gpt_3.5
+    title_generator: groq-llama3_70b #openai-gpt_3.5
+    tags_generator: groq-llama3_70b #openai-gpt_3.5
+
+
+

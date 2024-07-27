@@ -35,11 +35,12 @@ class BrowserTools():
           backstory=
           "You're a Principal Researcher at a big company and you need to do a research about a given topic.",
           allow_delegation=False,
-          llm=LLM(execution_type='openai').get_llm())
+          llm=LLM(execution_type='groq', model='llama3_70b').get_llm())
       task = Task(
           agent=agent,
           description=
-          f'Analyze and summarize the content below, make sure to include the most relevant information in the summary, return only the summary nothing else.\n\nCONTENT\n----------\n{chunk}'
+          f'Analyze and summarize the content below, make sure to include the most relevant information in the summary, return only the summary nothing else.\n\nCONTENT\n----------\n{chunk}',
+          expected_output="summary of the website in the string format"
       )
       summary = task.execute()
       summaries.append(summary)

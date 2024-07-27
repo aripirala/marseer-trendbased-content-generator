@@ -38,6 +38,15 @@ def get_agent_config():
     """
     return load_config('agents')
 
+def get_tool_config():
+    """
+    Load the model configuration file.
+    
+    Returns:
+        dict: The contents of the model.yaml file as a dictionary.
+    """
+    return load_config('tools')
+
 
 # Example usage
 if __name__ == "__main__":
